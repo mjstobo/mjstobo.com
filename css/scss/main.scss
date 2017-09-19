@@ -49,12 +49,83 @@ body {
 .wrapper {
     background: $hero;
     display: flex;
+    flex-flow: column wrap;
+}
+
+.projects {
+    background: $white;
+    width: 100%;
+    min-height: 400px;
+    max-height: 100%;
+
+    & h3 {
+        margin: 2% 5% 1%;
+        color: $blue;
+    }
+}
+
+.project-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: inherit;
+}
+
+.project-item {
+    margin: 1em;
+    min-height: 300px;
+    width: 40%;
+
+    & p {
+        color: $blue;
+    }
 }
 
 .content {
     background: $blue;
-}
+    width: 100%;
+    min-height: 300px;
+    max-height: 100%;
+    &.grey {
+        background: $grey;
+        color: $bg;
+        & p {
+            background: $white;
+            color: $grey;
+        }
+    }
 
-.content h2 {
-    color: $white;
+    &.blue {
+        background: $blue;
+        color: $white;
+        & p {
+            background: $white;
+            color: $blue;
+        }
+    }
+
+    &.white {
+        background: $white;
+        color: $bg;
+        & p {
+            background: $bg;
+            color: $white;
+        }
+        & h3 {
+            color: $bg;
+        }
+    }
+
+    & p {
+            width: 50%;
+            margin: 2% 5% 1%;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        & h3 {
+            color: $white;
+            margin: 2% 5% 1%;
+        }
+
 }

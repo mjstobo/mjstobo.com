@@ -34,12 +34,63 @@ body {
 
 .wrapper {
   background: #ffffff;
-  display: flex; }
+  display: flex;
+  flex-flow: column wrap; }
+
+.projects {
+  background: #ffffff;
+  width: 100%;
+  min-height: 400px;
+  max-height: 100%; }
+  .projects h3 {
+    margin: 2% 5% 1%;
+    color: #0300FF; }
+
+.project-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: inherit; }
+
+.project-item {
+  margin: 1em;
+  min-height: 300px;
+  width: 40%; }
+  .project-item p {
+    color: #0300FF; }
 
 .content {
-  background: #0300FF; }
-
-.content h2 {
-  color: #ffffff; }
+  background: #0300FF;
+  width: 100%;
+  min-height: 300px;
+  max-height: 100%; }
+  .content.grey {
+    background: #C7C3BD;
+    color: #000000; }
+    .content.grey p {
+      background: #ffffff;
+      color: #C7C3BD; }
+  .content.blue {
+    background: #0300FF;
+    color: #ffffff; }
+    .content.blue p {
+      background: #ffffff;
+      color: #0300FF; }
+  .content.white {
+    background: #ffffff;
+    color: #000000; }
+    .content.white p {
+      background: #000000;
+      color: #ffffff; }
+    .content.white h3 {
+      color: #000000; }
+  .content p {
+    width: 50%;
+    margin: 2% 5% 1%;
+    text-align: left;
+    word-wrap: break-word; }
+  .content h3 {
+    color: #ffffff;
+    margin: 2% 5% 1%; }
 
 /*# sourceMappingURL=main.css.map */
