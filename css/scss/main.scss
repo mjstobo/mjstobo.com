@@ -1,0 +1,60 @@
+$bg: #000000;
+$ff: 'arial';
+$blue: #0300FF;
+
+$white: #ffffff;
+$hero: #ffffff;
+$grey: #C7C3BD;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $bg;
+}
+
+.scrolling {
+    color: $white;
+    width: 40%;
+    text-align: center;
+}
+
+.highlight-word {
+    color: $grey;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+}
+
+.autoscroll {
+    color: $white;
+    position: absolute;
+    bottom: 0;
+}
+
+#landing-hero {
+    height: 100vh;
+    width: 100vw;
+    background: $bg;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background: $bg;
+    height: 40px;
+    color: $white;
+}
+
+.wrapper {
+    background: $hero;
+    display: flex;
+}
+
+.content {
+    background: $blue;
+}
+
+.content h2 {
+    color: $white;
+}

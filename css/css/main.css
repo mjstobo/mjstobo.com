@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000; }
+
+.scrolling {
+  color: #ffffff;
+  width: 40%;
+  text-align: center; }
+
+.highlight-word {
+  color: #C7C3BD;
+  text-decoration: underline;
+  text-decoration-color: #0300FF; }
+
+.autoscroll {
+  color: #ffffff;
+  position: absolute;
+  bottom: 0; }
+
+#landing-hero {
+  height: 100vh;
+  width: 100vw;
+  background: #000000;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.nav {
+  background: #000000;
+  height: 40px;
+  color: #ffffff; }
+
+.wrapper {
+  background: #ffffff;
+  display: flex; }
+
+.content {
+  background: #0300FF; }
+
+.content h2 {
+  color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */
