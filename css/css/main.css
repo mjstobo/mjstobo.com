@@ -43,8 +43,11 @@ body {
   min-height: 400px;
   max-height: 100%; }
   .projects h3 {
-    margin: 2% 5% 1%;
+    margin: 2% 7.5% 1%;
     color: #0300FF; }
+  .projects img {
+    width: 100%;
+    height: 80%; }
 
 .project-wrapper {
   display: flex;
@@ -55,9 +58,10 @@ body {
 .project-item {
   margin: 1em;
   min-height: 300px;
-  width: 40%; }
+  width: 37.5%; }
   .project-item p {
-    color: #0300FF; }
+    color: #0300FF;
+    margin: 5px; }
 
 .content {
   background: #0300FF;
@@ -70,27 +74,35 @@ body {
     .content.grey p {
       background: #ffffff;
       color: #C7C3BD; }
+      .content.grey p.date {
+        color: #ffffff; }
   .content.blue {
     background: #0300FF;
     color: #ffffff; }
     .content.blue p {
       background: #ffffff;
       color: #0300FF; }
+      .content.blue p.date {
+        color: #ffffff; }
   .content.white {
     background: #ffffff;
     color: #000000; }
     .content.white p {
       background: #000000;
       color: #ffffff; }
+      .content.white p.date {
+        color: #000000; }
     .content.white h3 {
       color: #000000; }
   .content p {
     width: 50%;
-    margin: 2% 5% 1%;
+    margin: 2% 7.5% 1%;
     text-align: left;
     word-wrap: break-word; }
+    .content p.date {
+      background: none; }
   .content h3 {
     color: #ffffff;
-    margin: 2% 5% 1%; }
+    margin: 2% 7.5% 1%; }
 
 /*# sourceMappingURL=main.css.map */

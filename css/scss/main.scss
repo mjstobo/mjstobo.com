@@ -59,8 +59,12 @@ body {
     max-height: 100%;
 
     & h3 {
-        margin: 2% 5% 1%;
+        margin: 2% 7.5% 1%;
         color: $blue;
+    }
+    & img {
+        width: 100%;
+        height: 80%;
     }
 }
 
@@ -74,10 +78,11 @@ body {
 .project-item {
     margin: 1em;
     min-height: 300px;
-    width: 40%;
+    width: 37.5%;
 
     & p {
         color: $blue;
+        margin: 5px;
     }
 }
 
@@ -92,6 +97,9 @@ body {
         & p {
             background: $white;
             color: $grey;
+            &.date {
+                color: $white;
+            }
         }
     }
 
@@ -101,6 +109,9 @@ body {
         & p {
             background: $white;
             color: $blue;
+            &.date {
+                color: $white;
+            }
         }
     }
 
@@ -110,6 +121,9 @@ body {
         & p {
             background: $bg;
             color: $white;
+            &.date {
+                color: $bg;
+            }
         }
         & h3 {
             color: $bg;
@@ -118,14 +132,17 @@ body {
 
     & p {
             width: 50%;
-            margin: 2% 5% 1%;
+            margin: 2% 7.5% 1%;
             text-align: left;
             word-wrap: break-word;
+            &.date {
+                background: none;
+            }
         }
 
         & h3 {
             color: $white;
-            margin: 2% 5% 1%;
+            margin: 2% 7.5% 1%;
         }
 
 }
