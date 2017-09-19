@@ -1,5 +1,5 @@
 $bg: #000000;
-$ff: 'arial';
+$ff: 'helvetica';
 $blue: #0300FF;
 
 $white: #ffffff;
@@ -27,6 +27,7 @@ body {
 .autoscroll {
     color: $white;
     position: absolute;
+    text-decoration: none;
     bottom: 0;
 }
 
@@ -38,12 +39,43 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    & a {
+        margin: 1%;
+    }
 }
 
-.nav {
+nav {
     background: $bg;
-    height: 40px;
+    height: 45px;
     color: $white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: $white;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.navbar {
+    padding-left: 7.5%;
+    width: 100%;
+    display: flex; 
+    & span {
+        color: $white;
+        margin-left: auto;
+        margin-right: 2%;
+    }
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
 }
 
 .wrapper {
@@ -89,7 +121,7 @@ body {
 .content {
     background: $blue;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     max-height: 100%;
     &.grey {
         background: $grey;
