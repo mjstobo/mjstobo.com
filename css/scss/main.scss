@@ -1,11 +1,9 @@
 $bg: #000000;
 $ff: 'Overpass Mono';
 $blue: #0300FF;
-
 $white: #ffffff;
 $hero: #ffffff;
 $grey: #C7C3BD;
-
 body {
     margin: 0;
     padding: 0;
@@ -41,7 +39,6 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-
     & a {
         margin: 1%;
     }
@@ -66,7 +63,7 @@ nav a {
 .navbar {
     padding-left: 7.5%;
     width: 100%;
-    display: flex; 
+    display: flex;
     & span {
         color: $white;
         margin-left: auto;
@@ -76,7 +73,8 @@ nav a {
 
 .fixed-header {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -88,10 +86,10 @@ nav a {
 
 .projects {
     background: $white;
+    position: relative;
     width: 100%;
     min-height: 400px;
     max-height: 100%;
-
     & h3 {
         margin: 2% 7.5% 1%;
         color: $blue;
@@ -107,13 +105,13 @@ nav a {
     flex-flow: row nowrap;
     justify-content: center;
     width: inherit;
+    margin-bottom: 1%;
 }
 
 .project-item {
     margin: 1em;
     min-height: 300px;
     width: 37.5%;
-
     & p {
         color: $blue;
         margin: 5px;
@@ -122,13 +120,69 @@ nav a {
 
 h3 {
     width: 40%;
+    padding-top: 5px;
+}
+
+.border {
+    width: 25%;
+    margin: 0;
+    height: 4.5%;
+    border: 1px white;
+    background: $white;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    &.skills {
+        background: $white;
+        width: 20%;
+    }
+    &.edu {
+        width: 17.5%;
+        top: 0;
+        background: $grey;
+    }
+    &.proj {
+        background: $grey;
+        width: 35%;
+        height: 4%;
+    }
+    &.foot {
+        background: $blue;
+        width: 17.5%;
+    }
+}
+
+.footer {
+    min-height: 300px;
+    width: 100%;
+    background: $blue;
+    display: flex;
+    flex-flow: column nowrap;
+    & h3 {
+        color: $white;
+        margin: 2% 7.5% 1%;
+    }
+    & p {
+        text-align: left;
+        background: $white;
+        color: $blue;
+        width: 40%;
+        margin: 2% 7.5% 1%;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & .copyright {
+        display: inline;
+        text-align: center;
+    }
 }
 
 .content {
     background: $blue;
     width: 100%;
-    min-height: 400px;
-    max-height: 100%;
+    min-height: 450px;
+    position: relative;
     &.grey {
         background: $grey;
         color: $bg;
@@ -140,7 +194,6 @@ h3 {
             }
         }
     }
-
     &.blue {
         background: $blue;
         color: $white;
@@ -152,7 +205,6 @@ h3 {
             }
         }
     }
-
     &.white {
         background: $white;
         color: $bg;
@@ -167,20 +219,17 @@ h3 {
             color: $bg;
         }
     }
-
     & p {
-            width: 50%;
-            margin: 2% 7.5% 1%;
-            text-align: left;
-            word-wrap: break-word;
-            &.date {
-                background: none;
-            }
+        width: 50%;
+        margin: 2% 7.5% 1%;
+        text-align: left;
+        word-wrap: break-word;
+        &.date {
+            background: none;
         }
-
-        & h3 {
-            color: $white;
-            margin: 2% 7.5% 1%;
-        }
-
+    }
+    & h3 {
+        color: $white;
+        margin: 2% 7.5% 1%;
+    }
 }

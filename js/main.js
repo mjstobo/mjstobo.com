@@ -16,7 +16,7 @@ $('.autoscroll').click(() => {
 });
 
 var typed = new Typed('.typed', {
-    strings: ["digital enthusiast.", "digital native.", "digital nerd.", "Crows supporter."],
+    strings: ["digital enthusiast.", "digital native.", "Pug owner.", "Crows supporter."],
     typeSpeed: 30,
     backSpeed: 30,
     backDelay: 700,
