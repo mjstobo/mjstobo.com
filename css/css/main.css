@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #000000;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  font-family: "Overpass Mono", monospace; }
 
 .scrolling {
   color: #ffffff;
@@ -90,6 +91,9 @@ nav a {
   .project-item p {
     color: #0300FF;
     margin: 5px; }
+
+h3 {
+  width: 40%; }
 
 .content {
   background: #0300FF;

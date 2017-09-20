@@ -1,5 +1,5 @@
 $bg: #000000;
-$ff: 'helvetica';
+$ff: 'Overpass Mono';
 $blue: #0300FF;
 
 $white: #ffffff;
@@ -11,6 +11,7 @@ body {
     padding: 0;
     background: $bg;
     -webkit-font-smoothing: antialiased;
+    font-family: $ff, monospace;
 }
 
 .scrolling {
@@ -117,6 +118,10 @@ nav a {
         color: $blue;
         margin: 5px;
     }
+}
+
+h3 {
+    width: 40%;
 }
 
 .content {
