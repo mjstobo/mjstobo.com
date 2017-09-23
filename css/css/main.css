@@ -9,6 +9,14 @@ body {
   color: #ffffff;
   width: 40%;
   text-align: center; }
+  @media all and (max-width: 768px) {
+    .scrolling {
+      width: 75%;
+      text-align: left; } }
+  @media all and (max-width: 575px) {
+    .scrolling {
+      width: 80%;
+      text-align: left; } }
 
 .highlight-word {
   color: #C7C3BD;
@@ -50,6 +58,9 @@ nav a {
   padding-left: 7.5%;
   width: 100%;
   display: flex; }
+  @media all and (max-width: 575px) {
+    .navbar {
+      font-size: 11px; } }
   .navbar span {
     color: #ffffff;
     margin-left: auto;
@@ -65,6 +76,13 @@ nav a {
   background: #ffffff;
   display: flex;
   flex-flow: column wrap; }
+
+@media all and (max-width: 768px) {
+  .date {
+    margin-bottom: 3%; } }
+@media all and (max-width: 575px) {
+  .date {
+    margin-bottom: 3%; } }
 
 .projects {
   background: #ffffff;
@@ -84,7 +102,15 @@ nav a {
   flex-flow: row nowrap;
   justify-content: center;
   width: inherit;
-  margin-bottom: 1%; }
+  margin-bottom: 2%; }
+  @media all and (max-width: 768px) {
+    .project-wrapper {
+      flex-flow: column wrap;
+      margin-bottom: 2.5%; } }
+  @media all and (max-width: 575px) {
+    .project-wrapper {
+      flex-flow: column wrap;
+      margin-bottom: 3%; } }
 
 .project-item {
   margin: 1em;
@@ -93,20 +119,40 @@ nav a {
   .project-item p {
     color: #0300FF;
     margin: 5px; }
+  @media all and (max-width: 768px) {
+    .project-item {
+      width: 80%; } }
+  @media all and (max-width: 575px) {
+    .project-item {
+      width: 80%; } }
 
 h3 {
   width: 40%;
   padding-top: 5px; }
+  @media all and (max-width: 768px) {
+    h3 {
+      width: 70%;
+      margin: 2%; } }
+  @media all and (max-width: 575px) {
+    h3 {
+      width: 75%;
+      margin: 2%; } }
 
 .border {
   width: 25%;
   margin: 0;
-  height: 4.5%;
+  height: 4%;
   border: 1px white;
   background: #ffffff;
   left: 0;
   bottom: 0;
   position: absolute; }
+  @media all and (max-width: 768px) {
+    .border {
+      height: 4%; } }
+  @media all and (max-width: 575px) {
+    .border {
+      height: 2%; } }
   .border.skills {
     background: #ffffff;
     width: 20%; }
@@ -114,10 +160,22 @@ h3 {
     width: 17.5%;
     top: 0;
     background: #C7C3BD; }
+    @media all and (max-width: 768px) {
+      .border.edu {
+        height: 2.5%; } }
+    @media all and (max-width: 575px) {
+      .border.edu {
+        height: 1.5%; } }
   .border.proj {
     background: #C7C3BD;
     width: 35%;
     height: 4%; }
+    @media all and (max-width: 768px) {
+      .border.proj {
+        height: 2.5%; } }
+    @media all and (max-width: 575px) {
+      .border.proj {
+        height: 2%; } }
   .border.foot {
     background: #0300FF;
     width: 17.5%; }
@@ -137,6 +195,14 @@ h3 {
     color: #0300FF;
     width: 40%;
     margin: 2% 7.5% 1%; }
+    @media all and (max-width: 768px) {
+      .footer p {
+        width: 75%;
+        margin: 3% 7.5% 1%; } }
+    @media all and (max-width: 575px) {
+      .footer p {
+        width: 80%;
+        margin: 3% 7.5% 1%; } }
   .footer a {
     text-decoration: none; }
   .footer .copyright {
@@ -179,10 +245,22 @@ h3 {
     margin: 2% 7.5% 1%;
     text-align: left;
     word-wrap: break-word; }
+    @media all and (max-width: 768px) {
+      .content p {
+        width: 80%; } }
+    @media all and (max-width: 575px) {
+      .content p {
+        width: 80%; } }
     .content p.date {
       background: none; }
   .content h3 {
     color: #ffffff;
     margin: 2% 7.5% 1%; }
+    @media all and (max-width: 768px) {
+      .content h3 {
+        margin: 4% 7.5% 1%; } }
+    @media all and (max-width: 575px) {
+      .content h3 {
+        margin: 4% 7.5% 1%; } }
 
 /*# sourceMappingURL=main.css.map */
