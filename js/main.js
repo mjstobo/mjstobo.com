@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import Typed from 'typed.js';
 
 $(window).scroll(function(){
