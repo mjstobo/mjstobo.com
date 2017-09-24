@@ -9599,6 +9599,42 @@ $('.autoscroll').click(function () {
     }, 400);
 });
 
+var projectIcon = document.getElementsByClassName('expand');
+var projectPanel = document.getElementsByClassName('proj-expand');
+var projectSection = document.getElementsByClassName('project-item');
+
+projectIcon[1].addEventListener('click', function () {
+    var x = projectPanel[1].className;
+    switch (x) {
+        case 'proj-expand active':
+            projectPanel[1].className = 'proj-expand inactive';
+            projectSection[1].className = 'project-item inactive';
+            break;
+        case 'proj-expand inactive':
+            projectPanel[1].className = 'proj-expand active';
+            projectSection[1].className = 'project-item active';
+            break;
+        default:
+            break;
+    }
+}, false);
+
+projectIcon[0].addEventListener('click', function () {
+    var x = projectPanel[0].className;
+    switch (x) {
+        case 'proj-expand active':
+            projectPanel[0].className = 'proj-expand inactive';
+            projectSection[0].className = 'project-item inactive';
+            break;
+        case 'proj-expand inactive':
+            projectPanel[0].className = 'proj-expand active';
+            projectSection[0].className = 'project-item active';
+            break;
+        default:
+            break;
+    }
+}, false);
+
 var typed = new _typed2.default('.typed', {
     strings: ["digital enthusiast.", "digital native.", "Pug owner.", "Crows supporter."],
     typeSpeed: 30,

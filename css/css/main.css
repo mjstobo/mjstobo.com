@@ -161,6 +161,7 @@ nav a {
 
 .project-item {
   margin: 1em;
+  margin-bottom: 3.5%;
   min-height: 300px;
   width: 37.5%;
   display: -webkit-box;
@@ -174,6 +175,10 @@ nav a {
     color: #0300FF;
     margin: 5px;
     width: 70%; }
+  .project-item.active {
+    border: 2px solid #0300FF; }
+  .project-item.inactive {
+    border: none; }
   @media all and (max-width: 768px) {
     .project-item {
       width: 80%; } }
@@ -187,17 +192,52 @@ nav a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .project-text .proj-expand {
+    background: #0300FF;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .project-text .proj-expand.inactive {
+      display: none; }
+    .project-text .proj-expand.active {
+      visibility: visible; }
+    .project-text .proj-expand p {
+      width: 95%;
+      color: #ffffff; }
 
 .expand {
   margin-left: auto;
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin-top: 2.5%;
   margin-right: 2.5px; }
   .expand img {
     height: 20px;
     width: 20px; }
+  .expand:hover {
+    cursor: pointer; }
+
+.cta {
+  color: #ffffff;
+  background: #0300FF;
+  border: 2px solid #ffffff;
+  bottom: 0;
+  margin: 3%;
+  position: absolute; }
+  .cta:hover {
+    color: #0300FF;
+    background: #ffffff;
+    border: 2px solid #ffffff; }
 
 h3 {
   width: 40%;
