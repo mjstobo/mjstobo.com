@@ -3,7 +3,8 @@ body {
   padding: 0;
   background: #262322;
   -webkit-font-smoothing: antialiased;
-  font-family: "Overpass Mono", monospace; }
+  font-family: "Overpass Mono", monospace;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.25); }
 
 .anchor {
   height: 55px;
@@ -32,7 +33,7 @@ body {
       text-align: left; } }
 
 .highlight-word {
-  color: #D52941; }
+  color: #C33C54; }
 
 .autoscroll {
   color: #F7FFF7;
@@ -173,10 +174,6 @@ nav a {
     color: #083D77;
     margin: 5px;
     width: 70%; }
-  .project-item.active {
-    border: 2px solid #083D77; }
-  .project-item.inactive {
-    border: none; }
   @media all and (max-width: 768px) {
     .project-item {
       width: 80%; } }
@@ -270,7 +267,7 @@ h3 {
   .border.edu {
     width: 17.5%;
     top: 0;
-    background: #D52941; }
+    background: #C33C54; }
     @media all and (max-width: 768px) {
       .border.edu {
         height: 2.5%; } }
@@ -278,7 +275,7 @@ h3 {
       .border.edu {
         height: 1.5%; } }
   .border.proj {
-    background: #D52941;
+    background: #C33C54;
     width: 35%;
     height: 4%; }
     @media all and (max-width: 768px) {
@@ -331,11 +328,11 @@ h3 {
   min-height: 450px;
   position: relative; }
   .content.grey {
-    background: #D52941;
+    background: #C33C54;
     color: #262322; }
     .content.grey p {
       background: #F7FFF7;
-      color: #D52941; }
+      color: #C33C54; }
       .content.grey p.date {
         color: #F7FFF7; }
   .content.blue {
@@ -357,16 +354,16 @@ h3 {
     .content.white h3 {
       color: #262322; }
   .content p {
-    width: 50%;
+    width: 60%;
     margin: 2% 7.5% 1%;
     text-align: left;
     word-wrap: break-word; }
     @media all and (max-width: 768px) {
       .content p {
-        width: 80%; } }
+        width: 82.5%; } }
     @media all and (max-width: 575px) {
       .content p {
-        width: 80%; } }
+        width: 82.5%; } }
     .content p.date {
       background: none; }
   .content h3 {

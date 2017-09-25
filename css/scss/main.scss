@@ -18,7 +18,7 @@ $accent: #F6D8AE;
 //$white: #ffffff;
 //$red: #C7C3BD; // OG Grey
 // $red: #5D536B; //More purple
-$red: #D52941;
+$red: #C33C54;
 
 body {
     margin: 0;
@@ -26,6 +26,7 @@ body {
     background: $bg;
     -webkit-font-smoothing: antialiased;
     font-family: $ff, monospace;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.25);
 }
 
 .anchor {
@@ -181,12 +182,7 @@ nav a {
         margin: 5px;
         width: 70%;
     }
-    &.active {
-        border: 2px solid $blue;
-    }
-    &.inactive {
-        border: none;
-    }
+
     @media all and (max-width: $med) {
         width: 80%;
     }
@@ -384,15 +380,15 @@ h3 {
         }
     }
     & p {
-        width: 50%;
+        width: 60%;
         margin: 2% 7.5% 1%;
         text-align: left;
         word-wrap: break-word;
         @media all and (max-width: $med) {
-            width: 80%;
+            width: 82.5%;
         }
         @media all and (max-width: $sm) {
-            width: 80%;
+            width: 82.5%;
         }
         &.date {
             background: none;
