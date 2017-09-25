@@ -1,21 +1,24 @@
 // Breakpoints
-
 $lg: 991px;
 $med: 768px;
 $sm: 575px;
-
 // @media all and (max-width: $lg) {  } 
 // @media all and (max-width: $med) {  } 
 // @media all and (max-width: $sm) {  }
-
-
 // Colours & fonts
-
-$bg: #000000;
+//$bg: #000000;
+$bg : #262322;
 $ff: 'Overpass Mono';
-$blue: #0300FF;
-$white: #ffffff;
-$grey: #C7C3BD;
+//$blue: #0300FF; //Original
+// $blue: #101D42; //Darker
+//$blue: #090C9B; //Subtler, similar to OG
+$blue: #083D77; //Cerulean
+$white: #F7FFF7; // Mint cream
+$accent: #F6D8AE;
+//$white: #ffffff;
+//$red: #C7C3BD; // OG Grey
+// $red: #5D536B; //More purple
+$red: #D52941;
 
 body {
     margin: 0;
@@ -48,17 +51,15 @@ body {
     @media all and (max-width: $med) {
         width: 75%;
         text-align: left;
-      } 
-    @media all and (max-width: $sm) { 
+    }
+    @media all and (max-width: $sm) {
         width: 80%;
         text-align: left;
-     }
+    }
 }
 
 .highlight-word {
-    color: $grey;
-    text-decoration: underline;
-    text-decoration-color: $blue;
+    color: $red;
 }
 
 .autoscroll {
@@ -101,11 +102,11 @@ nav a {
     padding-left: 7.5%;
     width: 100%;
     display: flex;
-
+    
     @media all and (max-width: $sm) {
         font-size: 11px;
-        } 
-    
+    }
+
     & span {
         color: $white;
         margin-left: auto;
@@ -117,6 +118,7 @@ nav a {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
     width: 100%;
 }
 
@@ -129,10 +131,10 @@ nav a {
 .date {
     @media all and (max-width: $med) {
         margin-bottom: 3%;
-         } 
+    }
     @media all and (max-width: $sm) {
         margin-bottom: 3%;
-        } 
+    }
 }
 
 .projects {
@@ -149,7 +151,6 @@ nav a {
         width: 100%;
         height: 80%;
     }
-        
 }
 
 .project-wrapper {
@@ -161,11 +162,11 @@ nav a {
     @media all and (max-width: $med) {
         flex-flow: column wrap;
         margin-bottom: 2.5%;
-            } 
+    }
     @media all and (max-width: $sm) {
         flex-flow: column wrap;
         margin-bottom: 3%;
-        } 
+    }
 }
 
 .project-item {
@@ -180,21 +181,18 @@ nav a {
         margin: 5px;
         width: 70%;
     }
-
     &.active {
         border: 2px solid $blue;
     }
-
     &.inactive {
         border: none;
     }
-
     @media all and (max-width: $med) {
         width: 80%;
-            } 
+    }
     @media all and (max-width: $sm) {
         width: 80%;
-        } 
+    }
 }
 
 .project-text {
@@ -208,18 +206,15 @@ nav a {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-
         &.inactive {
             display: none;
         }
         &.active {
             visibility: visible;
         }
-
         & p {
             width: 95%;
             color: $white;
-
         }
     }
 }
@@ -228,12 +223,10 @@ nav a {
     margin-left: auto;
     margin-top: 2.5%;
     margin-right: 2.5px;
-
     & img {
-       height: 20px;
-       width: 20px;
+        height: 20px;
+        width: 20px;
     }
-
     &:hover {
         cursor: pointer;
     }
@@ -246,7 +239,6 @@ nav a {
     bottom: 0;
     margin: 3%;
     position: absolute;
-
     &:hover {
         color: $blue;
         background: $white;
@@ -260,11 +252,11 @@ h3 {
     @media all and (max-width: $med) {
         width: 70%;
         margin: 2%;
-            } 
+    }
     @media all and (max-width: $sm) {
         width: 75%;
         margin: 2%
-        } 
+    }
 }
 
 .border {
@@ -276,14 +268,12 @@ h3 {
     left: 0;
     bottom: 0;
     position: absolute;
-
     @media all and (max-width: $med) {
         height: 4%;
-            } 
+    }
     @media all and (max-width: $sm) {
         height: 2%;
-        } 
-
+    }
     &.skills {
         background: $white;
         width: 20%;
@@ -291,24 +281,24 @@ h3 {
     &.edu {
         width: 17.5%;
         top: 0;
-        background: $grey;
+        background: $red;
         @media all and (max-width: $med) {
             height: 2.5%;
-                } 
+        }
         @media all and (max-width: $sm) {
             height: 1.5%;
-            } 
+        }
     }
     &.proj {
-        background: $grey;
+        background: $red;
         width: 35%;
         height: 4%;
         @media all and (max-width: $med) {
             height: 2.5%;
-                } 
+        }
         @media all and (max-width: $sm) {
             height: 2%;
-            } 
+        }
     }
     &.foot {
         background: $blue;
@@ -335,11 +325,11 @@ h3 {
         @media all and (max-width: $med) {
             width: 75%;
             margin: 3% 7.5% 1%;
-                } 
+        }
         @media all and (max-width: $sm) {
             width: 80%;
             margin: 3% 7.5% 1%;
-            } 
+        }
     }
     & a {
         text-decoration: none;
@@ -355,20 +345,14 @@ h3 {
     width: 100%;
     min-height: 450px;
     position: relative;
-
-    @media all and (max-width: $med) {
-
-      } 
-      @media all and (max-width: $sm) {
-       
-      } 
-
+    @media all and (max-width: $med) {}
+    @media all and (max-width: $sm) {}
     &.grey {
-        background: $grey;
+        background: $red;
         color: $bg;
         & p {
             background: $white;
-            color: $grey;
+            color: $red;
             &.date {
                 color: $white;
             }
@@ -404,14 +388,12 @@ h3 {
         margin: 2% 7.5% 1%;
         text-align: left;
         word-wrap: break-word;
-
         @media all and (max-width: $med) {
             width: 80%;
-                } 
+        }
         @media all and (max-width: $sm) {
             width: 80%;
-            } 
-
+        }
         &.date {
             background: none;
         }
@@ -419,12 +401,11 @@ h3 {
     & h3 {
         color: $white;
         margin: 2% 7.5% 1%;
-
         @media all and (max-width: $med) {
             margin: 4% 7.5% 1%;
-                } 
+        }
         @media all and (max-width: $sm) {
             margin: 4% 7.5% 1%;
-            } 
+        }
     }
 }
