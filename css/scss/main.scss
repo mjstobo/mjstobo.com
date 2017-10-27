@@ -6,19 +6,13 @@ $sm: 575px;
 // @media all and (max-width: $med) {  } 
 // @media all and (max-width: $sm) {  }
 // Colours & fonts
-//$bg: #000000;
-$bg : #262322;
+$bg : #0D1317;
 $ff: 'Overpass Mono';
-//$blue: #0300FF; //Original
-// $blue: #101D42; //Darker
-//$blue: #090C9B; //Subtler, similar to OG
-$blue: #083D77; //Cerulean
+ $blue: #0300FF; //Original
 $white: #F7FFF7; // Mint cream
-$accent: #F6D8AE;
-//$white: #ffffff;
-//$red: #C7C3BD; // OG Grey
-// $red: #5D536B; //More purple
-$red: #C33C54;
+$accent: #246EB9;
+$red: #A2A7A5; // OG Grey
+
 
 body {
     margin: 0;
@@ -26,7 +20,7 @@ body {
     background: $bg;
     -webkit-font-smoothing: antialiased;
     font-family: $ff, monospace;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.25);
+    text-shadow: 0.1px 0.1px 0.1px rgba(0,0,0,0.25);
 }
 
 .anchor {
@@ -60,7 +54,7 @@ body {
 }
 
 .highlight-word {
-    color: $red;
+    color: $accent;
 }
 
 .autoscroll {
@@ -151,6 +145,12 @@ nav a {
     & img {
         width: 100%;
         height: 80%;
+    }
+}
+
+.project-image {
+    img {
+        opacity: 0.6;
     }
 }
 
