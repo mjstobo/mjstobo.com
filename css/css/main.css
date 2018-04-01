@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #262322;
+  background: #0D1317;
   -webkit-font-smoothing: antialiased;
   font-family: "Overpass Mono", monospace;
   text-shadow: 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.25); }
@@ -33,7 +33,7 @@ body {
       text-align: left; } }
 
 .highlight-word {
-  color: #C33C54; }
+  color: #246EB9; }
 
 .autoscroll {
   color: #F7FFF7;
@@ -44,7 +44,7 @@ body {
 #landing-hero {
   height: 100vh;
   width: 100vw;
-  background: #262322;
+  background: #0D1317;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +62,7 @@ body {
     margin: 1%; }
 
 nav {
-  background: #262322;
+  background: #0D1317;
   height: 45px;
   color: #F7FFF7;
   width: 100%;
@@ -129,6 +129,9 @@ nav a {
   .projects img {
     width: 100%;
     height: 80%; }
+
+.project-image img {
+  opacity: 0.6; }
 
 .project-wrapper {
   display: -webkit-box;
@@ -272,7 +275,7 @@ h3 {
   .border.edu {
     width: 17.5%;
     top: 0;
-    background: #C33C54; }
+    background: #A2A7A5; }
     @media all and (max-width: 768px) {
       .border.edu {
         height: 2.5%; } }
@@ -280,7 +283,7 @@ h3 {
       .border.edu {
         height: 1.5%; } }
   .border.proj {
-    background: #C33C54;
+    background: #A2A7A5;
     width: 35%;
     height: 4%; }
     @media all and (max-width: 768px) {
@@ -333,11 +336,11 @@ h3 {
   min-height: 450px;
   position: relative; }
   .content.grey {
-    background: #C33C54;
-    color: #262322; }
+    background: #A2A7A5;
+    color: #0D1317; }
     .content.grey p {
       background: #F7FFF7;
-      color: #C33C54; }
+      color: #A2A7A5; }
       .content.grey p.date {
         color: #F7FFF7; }
   .content.blue {
@@ -350,14 +353,14 @@ h3 {
         color: #F7FFF7; }
   .content.white {
     background: #F7FFF7;
-    color: #262322; }
+    color: #0D1317; }
     .content.white p {
-      background: #262322;
+      background: #0D1317;
       color: #F7FFF7; }
       .content.white p.date {
-        color: #262322; }
+        color: #0D1317; }
     .content.white h3 {
-      color: #262322; }
+      color: #0D1317; }
   .content p {
     width: 60%;
     margin: 2% 7.5% 1%;
