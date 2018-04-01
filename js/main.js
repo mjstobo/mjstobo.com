@@ -20,6 +20,7 @@ $('.autoscroll').click(() => {
     var projectIcon = document.getElementsByClassName('expand');
     var projectPanel = document.getElementsByClassName('proj-expand');
     var projectSection = document.getElementsByClassName('project-item');
+    var iconExpand = document.getElementsByClassName('icon-expand');
 
     projectIcon[1].addEventListener('click', function() {
         var x = projectPanel[1].className;
@@ -27,10 +28,12 @@ $('.autoscroll').click(() => {
             case 'proj-expand active':
                 projectPanel[1].className = 'proj-expand inactive';
                 projectSection[1].className = 'project-item inactive';
+                iconExpand[1].className = 'icon-expand';
                 break;
             case 'proj-expand inactive':
                 projectPanel[1].className = 'proj-expand active';
                 projectSection[1].className = 'project-item active';
+                iconExpand[1].className = 'icon-expand';
                 break;
             default:
                 break;
@@ -43,10 +46,12 @@ $('.autoscroll').click(() => {
             case 'proj-expand active':
                 projectPanel[0].className = 'proj-expand inactive';
                 projectSection[0].className = 'project-item inactive';
+                iconExpand[0].className = 'icon-expand active';
                 break;
             case 'proj-expand inactive':
                 projectPanel[0].className = 'proj-expand active';
                 projectSection[0].className = 'project-item active';
+                iconExpand[0].className = 'icon-expand minus';
                 break;
             default:
                 break;

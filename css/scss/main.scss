@@ -2,23 +2,25 @@
 $lg: 991px;
 $med: 768px;
 $sm: 575px;
-// @media all and (max-width: $lg) {  } 
-// @media all and (max-width: $med) {  } 
+// @media all and (max-width: $lg) {  }
+// @media all and (max-width: $med) {  }
 // @media all and (max-width: $sm) {  }
 // Colours & fonts
 //$bg: #000000;
 $bg : #262322;
 $ff: 'Overpass Mono';
-//$blue: #0300FF; //Original
+$blue: #0300FF; //Original
 // $blue: #101D42; //Darker
 //$blue: #090C9B; //Subtler, similar to OG
-$blue: #083D77; //Cerulean
+//$blue: #083D77; //Cerulean
+
 $white: #F7FFF7; // Mint cream
 $accent: #F6D8AE;
 //$white: #ffffff;
 //$red: #C7C3BD; // OG Grey
 // $red: #5D536B; //More purple
 $red: #C33C54;
+//$red: #605F5E;
 
 body {
     margin: 0;
@@ -26,7 +28,7 @@ body {
     background: $bg;
     -webkit-font-smoothing: antialiased;
     font-family: $ff, monospace;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.25);
+    text-shadow: 0.1px 0.1px 0.1px rgba(0,0,0,0.25);
 }
 
 .anchor {
@@ -74,10 +76,19 @@ body {
     height: 100vh;
     width: 100vw;
     background: $bg;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     & a {
         margin: 1%;
     }
@@ -88,8 +99,12 @@ nav {
     height: 45px;
     color: $white;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 nav a {
@@ -102,8 +117,10 @@ nav a {
 .navbar {
     padding-left: 7.5%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    
+
     @media all and (max-width: $sm) {
         font-size: 11px;
     }
@@ -125,8 +142,13 @@ nav a {
 
 .wrapper {
     background: $white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
 }
 
 .date {
@@ -155,17 +177,30 @@ nav a {
 }
 
 .project-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: inherit;
     margin-bottom: 2%;
     @media all and (max-width: $med) {
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
         margin-bottom: 2.5%;
     }
     @media all and (max-width: $sm) {
-        flex-flow: column wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
         margin-bottom: 3%;
     }
 }
@@ -175,8 +210,13 @@ nav a {
     margin-bottom: 3.5%;
     min-height: 300px;
     width: 37.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     & p {
         color: $blue;
         margin: 5px;
@@ -184,24 +224,44 @@ nav a {
     }
 
     @media all and (max-width: $med) {
-        width: 80%;
+        width: 90%;
     }
     @media all and (max-width: $sm) {
-        width: 80%;
+        width: 90%;
+    }
+}
+
+.icon-expand {
+    background:url('./plus.png');
+    & .minus {
+    background:url('./minus.png');
     }
 }
 
 .project-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+
     & .proj-expand {
         background: $blue;
         height: 400px;
         width: 100%;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         &.inactive {
             display: none;
         }
@@ -306,8 +366,13 @@ h3 {
     min-height: 300px;
     width: 100%;
     background: $blue;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     & h3 {
         color: $white;
         margin: 2% 7.5% 1%;
