@@ -170,6 +170,13 @@ nav a {
     }
 }
 
+.icon-expand {
+    background:url('./plus.png');
+    & .minus {
+        background:url('./minus.png');
+    }
+}
+
 .project-item {
     margin: 1em;
     margin-bottom: 3.5%;

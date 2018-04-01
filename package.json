@@ -1,0 +1,34 @@
+{
+  "name": "mjstobo.com",
+  "version": "1.0.0",
+  "description": "mjstobo.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mjstobo@bitbucket.org/mjstobo/mjstobo.com.git"
+  },
+  "author": "mjstobo",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mjstobo/mjstobo.com#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "import": "0.0.6",
+    "typed": "^0.3.3",
+    "typed.js": "^2.0.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jshint": "^2.9.5",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.1.0",
+    "webpack": "^3.11.0"
+  }
+}
