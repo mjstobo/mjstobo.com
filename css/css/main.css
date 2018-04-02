@@ -332,7 +332,8 @@ h3 {
 .content {
   background: #0300FF;
   width: 100%;
-  min-height: 450px;
+  min-height: 300px;
+  height: 450px;
   position: relative; }
   .content .list-p {
     margin-bottom: 7%; }
@@ -387,3 +388,59 @@ h3 {
     @media all and (max-width: 575px) {
       .content h3 {
         margin: 4% 7.5% 1%; } }
+
+.dev-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 80%;
+  line-height: 1.5em;
+  margin-left: 10%;
+  margin-top: 3.5%; }
+  .dev-icons ul {
+    list-style-type: none;
+    width: 100%; }
+  .dev-icons li {
+    display: inline;
+    margin: 2%; }
+  @media all and (max-width: 768px) {
+    .dev-icons {
+      margin-left: 3.5%;
+      margin-top: 10%;
+      width: 90%;
+      text-align: center; }
+      .dev-icons i {
+        font-size: 3em; }
+      .dev-icons li {
+        margin: 1.5%; }
+      .dev-icons ul {
+        margin: none; } }
+  @media all and (max-width: 575px) {
+    .dev-icons {
+      margin-left: 3.5%;
+      margin-top: 10%;
+      width: 90%;
+      text-align: center; }
+      .dev-icons i {
+        font-size: 2.5em; }
+      .dev-icons li {
+        margin: 1.5%; }
+      .dev-icons ul {
+        margin: none; } }
+
+i {
+  font-size: 4em; }
+
+#icons-panel {
+  height: 300px; }
+
+@media all and (max-width: 575px) {
+  #services-panel {
+    height: 550px; } }
