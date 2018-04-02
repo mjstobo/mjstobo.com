@@ -334,6 +334,8 @@ h3 {
   width: 100%;
   min-height: 450px;
   position: relative; }
+  .content .list-p {
+    margin-bottom: 7%; }
   .content.grey {
     background: #A2A7A5;
     color: #0D1317; }
@@ -342,6 +344,9 @@ h3 {
       color: #A2A7A5; }
       .content.grey p.date {
         color: #F7FFF7; }
+    .content.grey ul {
+      background: #F7FFF7;
+      color: #A2A7A5; }
   .content.blue {
     background: #0300FF;
     color: #F7FFF7; }
@@ -362,7 +367,7 @@ h3 {
       color: #0D1317; }
   .content p {
     width: 60%;
-    margin: 2% 7.5% 1%;
+    margin: 2% 7.5% 2.5%;
     text-align: left;
     word-wrap: break-word; }
     @media all and (max-width: 768px) {

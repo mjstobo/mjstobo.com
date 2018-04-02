@@ -11,7 +11,7 @@ $ff: 'Overpass Mono';
  $blue: #0300FF; //Original
 $white: #F7FFF7; // Mint cream
 $accent: #246EB9;
-$red: #A2A7A5; // OG Grey
+$grey: #A2A7A5; // OG Grey
 
 
 body {
@@ -282,7 +282,7 @@ h3 {
     &.edu {
         width: 17.5%;
         top: 0;
-        background: $red;
+        background: $grey;
         @media all and (max-width: $med) {
             height: 2.5%;
         }
@@ -291,7 +291,7 @@ h3 {
         }
     }
     &.proj {
-        background: $red;
+        background: $grey;
         width: 35%;
         height: 4%;
         @media all and (max-width: $med) {
@@ -348,15 +348,24 @@ h3 {
     position: relative;
     @media all and (max-width: $med) {}
     @media all and (max-width: $sm) {}
+
+    & .list-p {
+        margin-bottom: 7%;
+    }
+
     &.grey {
-        background: $red;
+        background: $grey;
         color: $bg;
         & p {
             background: $white;
-            color: $red;
+            color: $grey;
             &.date {
                 color: $white;
             }
+        }
+        & ul {
+            background: $white;
+            color: $grey;
         }
     }
     &.blue {
@@ -386,7 +395,7 @@ h3 {
     }
     & p {
         width: 60%;
-        margin: 2% 7.5% 1%;
+        margin: 2% 7.5% 2.5%;
         text-align: left;
         word-wrap: break-word;
         @media all and (max-width: $med) {
@@ -398,6 +407,7 @@ h3 {
         &.date {
             background: none;
         }
+        
     }
     & h3 {
         color: $white;
