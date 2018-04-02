@@ -19,7 +19,9 @@ $('.autoscroll').click(() => {
 var projectIcon = document.getElementsByClassName('expand');
 var projectPanel = document.getElementsByClassName('proj-expand');
 var projectSection = document.getElementsByClassName('project-item');
-var iconExpand = document.getElementsByClassName('icon-expand');
+var iconFirst = document.getElementById('icon-first');
+var iconSecond = document.getElementById('icon-second');
+
 
 projectIcon[1].addEventListener('click', function () {
     var x = projectPanel[1].className;
@@ -27,12 +29,12 @@ projectIcon[1].addEventListener('click', function () {
         case 'proj-expand active':
             projectPanel[1].className = 'proj-expand inactive';
             projectSection[1].className = 'project-item inactive';
-            iconExpand[1].setAttribute.src = './plus.png';
+            iconSecond.setAttribute('src', './plus.png');
             break;
         case 'proj-expand inactive':
             projectPanel[1].className = 'proj-expand active';
             projectSection[1].className = 'project-item active';
-            iconExpand[1].setAttribute.src = './minus.png';
+            iconSecond.setAttribute('src', './minus.png');
             break;
         default:
             break;
@@ -45,12 +47,12 @@ projectIcon[0].addEventListener('click', function () {
         case 'proj-expand active':
             projectPanel[0].className = 'proj-expand inactive';
             projectSection[0].className = 'project-item inactive';
-            iconExpand[0].setAttribute.src = './plus.png';
+            iconFirst.setAttribute('src', './plus.png');
             break;
         case 'proj-expand inactive':
             projectPanel[0].className = 'proj-expand active';
             projectSection[0].className = 'project-item active';
-            iconExpand[0].setAttribute.src = './minus.png';
+            iconFirst.setAttribute('src', './minus.png');
             break;
         default:
             break;
