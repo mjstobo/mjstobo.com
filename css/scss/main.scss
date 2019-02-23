@@ -156,7 +156,7 @@ nav a {
 
 .project-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     width: inherit;
     margin-bottom: 2%;
@@ -174,7 +174,7 @@ nav a {
     margin: 1em;
     margin-bottom: 3.5%;
     min-height: 300px;
-    width: 37.5%;
+    width: 45%;
     display: flex;
     flex-flow: column nowrap;
     & p {

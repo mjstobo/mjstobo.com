@@ -1,14 +1,23 @@
 var path = require('path');
 var webpack = require('webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: ['babel-polyfill', './js/main'],
     output: {
-        filename: "./dist/index.js"
+        filename: "./index.js"
     },
     module: {
-        loaders: [
-            {test: /\.css$/, loader: "style-loader!css-loader?modules&camelCase=dashes" },
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [
+                  "style-loader",
+                  MiniCssExtractPlugin.loader,
+                  "css-loader",
+                  "sass-loader"
+                ]
+              },
             {test: /\.js$/, loader: "babel-loader",  exclude: /node_modules/},
             {test: /\.jsx$/, loader: "babel-loader",  exclude: /node_modules/}
         ]
@@ -16,5 +25,10 @@ module.exports = {
   stats: {
       colors: true
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'main.css',
+    })
+  ]
 };

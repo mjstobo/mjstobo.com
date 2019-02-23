@@ -1,4 +1,5 @@
 import "babel-polyfill";
+import '../css/scss/main.scss';
 import Typed from 'typed.js';
 
 $(window).scroll(function () {
@@ -22,43 +23,25 @@ var projectSection = document.getElementsByClassName('project-item');
 var iconFirst = document.getElementById('icon-first');
 var iconSecond = document.getElementById('icon-second');
 
-
-projectIcon[1].addEventListener('click', function () {
-    var x = projectPanel[1].className;
-    switch (x) {
-        case 'proj-expand active':
-            projectPanel[1].className = 'proj-expand inactive';
-            projectSection[1].className = 'project-item inactive';
-            iconSecond.setAttribute('src', './plus.png');
-            break;
-        case 'proj-expand inactive':
-            projectPanel[1].className = 'proj-expand active';
-            projectSection[1].className = 'project-item active';
-            iconSecond.setAttribute('src', './minus.png');
-            break;
-        default:
-            break;
-    }
-}, false);
-
-projectIcon[0].addEventListener('click', function () {
-    var x = projectPanel[0].className;
-    switch (x) {
-        case 'proj-expand active':
-            projectPanel[0].className = 'proj-expand inactive';
-            projectSection[0].className = 'project-item inactive';
-            iconFirst.setAttribute('src', './plus.png');
-            break;
-        case 'proj-expand inactive':
-            projectPanel[0].className = 'proj-expand active';
-            projectSection[0].className = 'project-item active';
-            iconFirst.setAttribute('src', './minus.png');
-            break;
-        default:
-            break;
-    }
-}, false);
-
+for(let icon in projectIcon){
+    projectIcon[icon].addEventListener('click', function () {
+        var x = projectPanel[icon].className;
+        switch (x) {
+            case 'proj-expand active':
+                projectPanel[icon].className = 'proj-expand inactive';
+                projectSection[icon].className = 'project-item inactive';
+                iconSecond.setAttribute('src', './plus.png');
+                break;
+            case 'proj-expand inactive':
+                projectPanel[icon].className = 'proj-expand active';
+                projectSection[icon].className = 'project-item active';
+                iconSecond.setAttribute('src', './minus.png');
+                break;
+            default:
+                break;
+        }
+    }, false);
+}
 
 
 
