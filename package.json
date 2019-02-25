@@ -18,7 +18,7 @@
     "babel-runtime": "^6.26.0",
     "import": "0.0.6",
     "typed": "^0.3.3",
-    "typed.js": "^2.0.6",
+    "typed.js": "^2.0.10",
     "webpack": "^4.29.0"
   },
   "devDependencies": {

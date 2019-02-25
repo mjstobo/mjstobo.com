@@ -26,6 +26,7 @@ module.exports = {
       colors: true
   },
   devtool: 'source-map',
+  mode: 'production',
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'main.css',

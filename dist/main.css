@@ -152,7 +152,7 @@ nav a {
   flex-flow: row wrap; }
   .project-text .proj-expand {
     background: #0300FF;
-    height: 400px;
+    height: auto;
     width: 100%;
     position: relative;
     display: flex;
@@ -163,7 +163,7 @@ nav a {
       height: 0;
       opacity: 0; }
     .project-text .proj-expand.active {
-      height: 400px;
+      height: 250px;
       opacity: 1; }
     .project-text .proj-expand p {
       width: 95%;
@@ -377,12 +377,36 @@ h3 {
 i {
   font-size: 4em; }
 
+.icon {
+  fill: #fff;
+  width: 64px;
+  height: 64px;
+  margin-top: 1.5%; }
+  .icon:hover {
+    cursor: pointer; }
+  @media all and (max-width: 575px) {
+    .icon {
+      width: 32px;
+      height: 32px; } }
+
+.footer-icons {
+  margin: 1%; }
+  .footer-icons a {
+    color: white;
+    text-decoration: none; }
+
 #icons-panel {
   height: 300px; }
 
 @media all and (max-width: 575px) {
   #services-panel {
     height: 550px; } }
+
+.contact-icons {
+  margin-bottom: 1.5%; }
+  .contact-icons a {
+    color: white;
+    text-decoration: none; }
 
 
 /*# sourceMappingURL=main.css.map*/

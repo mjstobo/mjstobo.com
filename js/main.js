@@ -2,6 +2,15 @@ import "babel-polyfill";
 import '../css/scss/main.scss';
 import Typed from 'typed.js';
 
+var typed = new Typed('.typed', {
+    strings: ["digital enthusiast.", "digital native.", "Pug owner.", "Crows supporter."],
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 700,
+    showCursor: false,
+    smartBackspace: true
+});
+
 $(window).scroll(function () {
     if ($(window).scrollTop() >= $(window).height()) {
         $('nav').addClass('fixed-header');
@@ -46,11 +55,4 @@ for(let icon in projectIcon){
 
 
 
-var typed = new Typed('.typed', {
-    strings: ["digital enthusiast.", "digital native.", "Pug owner.", "Crows supporter."],
-    typeSpeed: 30,
-    backSpeed: 30,
-    backDelay: 700,
-    showCursor: false,
-    smartBackspace: true
-});
+

@@ -6148,9 +6148,9 @@
       "integrity": "sha1-kwRf0pKU+Q+fGbYSAC0nZsaArhc="
     },
     "typed.js": {
-      "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/typed.js/-/typed.js-2.0.6.tgz",
-      "integrity": "sha512-aGmMVR/J3fD4Dm3WWs1xb44ts47oQnYVgm2RF4BTMDdMpQIru0Jqa/lOkEzcS6eQWucA0lQl08rHgmNdvXkycQ=="
+      "version": "2.0.10",
+      "resolved": "https://registry.npmjs.org/typed.js/-/typed.js-2.0.10.tgz",
+      "integrity": "sha512-tpK+LRm5FM2GAIWWWogbOc4QRlctS425Ef1PCQKbj/G9wyig+Zt+20eLruK7CBPR+DEl/ou4uSfpwRETCSmk4A=="
     },
     "typedarray": {
       "version": "0.0.6",
