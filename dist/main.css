@@ -21,7 +21,7 @@ body {
 
 .scrolling {
   color: #F7FFF7;
-  width: 40%;
+  width: calc(400px + 7.5%);
   text-align: center; }
   @media all and (max-width: 768px) {
     .scrolling {
@@ -69,7 +69,10 @@ nav a {
 .navbar {
   padding-left: 7.5%;
   width: 100%;
-  display: flex; }
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly; }
   @media all and (max-width: 575px) {
     .navbar {
       font-size: 11px; } }
@@ -242,32 +245,32 @@ h3 {
       .border.proj {
         height: 2%; } }
   .border.foot {
-    background: #0300FF;
+    background: #0D1317;
     width: 17.5%; }
 
 .footer {
-  min-height: 300px;
+  min-height: 125px;
   width: 100%;
-  background: #0300FF;
+  background: #0D1317;
   display: flex;
   flex-flow: column nowrap; }
   .footer h3 {
     color: #F7FFF7;
-    margin: 2% 7.5% 1%; }
+    margin: 2.5% 5% 1%; }
   .footer p {
     text-align: left;
     background: #F7FFF7;
-    color: #0300FF;
+    color: #0D1317;
     width: 40%;
-    margin: 2% 7.5% 1%; }
+    margin: 3.5% 7.5% 1%; }
     @media all and (max-width: 768px) {
       .footer p {
         width: 75%;
-        margin: 3% 7.5% 1%; } }
+        margin: 5% 2.5% 1%; } }
     @media all and (max-width: 575px) {
       .footer p {
         width: 80%;
-        margin: 3% 7.5% 1%; } }
+        margin: 5% 7.5% 1%; } }
   .footer a {
     text-decoration: none; }
   .footer .copyright {
@@ -277,8 +280,8 @@ h3 {
 .content {
   background: #0300FF;
   width: 100%;
-  min-height: 300px;
-  height: 450px;
+  min-height: 250px;
+  height: 350px;
   position: relative; }
   .content .list-p {
     margin-bottom: 7%; }
@@ -334,6 +337,13 @@ h3 {
       .content h3 {
         margin: 4% 7.5% 1%; } }
 
+.icon-set {
+  width: 30%;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  margin-top: 1%; }
+
 .dev-icons {
   display: flex;
   align-items: center;
@@ -376,18 +386,20 @@ h3 {
 
 i {
   font-size: 4em; }
+  i.icon {
+    font-size: 1.75em; }
 
 .icon {
   fill: #fff;
-  width: 64px;
-  height: 64px;
-  margin-top: 1.5%; }
+  width: 24px;
+  height: 24px;
+  margin: 0.5%; }
   .icon:hover {
     cursor: pointer; }
   @media all and (max-width: 575px) {
     .icon {
-      width: 32px;
-      height: 32px; } }
+      width: 16px;
+      height: 16px; } }
 
 .footer-icons {
   margin: 1%; }

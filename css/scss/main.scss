@@ -41,7 +41,7 @@ body {
 
 .scrolling {
     color: $white;
-    width: 40%;
+    width: calc(400px + 7.5%);
     text-align: center;
     @media all and (max-width: $med) {
         width: 75%;
@@ -97,6 +97,11 @@ nav a {
     padding-left: 7.5%;
     width: 100%;
     display: flex;
+
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+
     
     @media all and (max-width: $sm) {
         font-size: 11px;
@@ -302,34 +307,34 @@ h3 {
         }
     }
     &.foot {
-        background: $blue;
+        background: $bg;
         width: 17.5%;
     }
 }
 
 .footer {
-    min-height: 300px;
+    min-height: 125px;
     width: 100%;
-    background: $blue;
+    background: $bg;
     display: flex;
     flex-flow: column nowrap;
     & h3 {
         color: $white;
-        margin: 2% 7.5% 1%;
+        margin: 2.5% 5% 1%;
     }
     & p {
         text-align: left;
         background: $white;
-        color: $blue;
+        color: $bg;
         width: 40%;
-        margin: 2% 7.5% 1%;
+        margin: 3.5% 7.5% 1%;
         @media all and (max-width: $med) {
             width: 75%;
-            margin: 3% 7.5% 1%;
+            margin: 5% 2.5% 1%;
         }
         @media all and (max-width: $sm) {
             width: 80%;
-            margin: 3% 7.5% 1%;
+            margin: 5% 7.5% 1%;
         }
     }
     & a {
@@ -344,8 +349,8 @@ h3 {
 .content {
     background: $blue;
     width: 100%;
-    min-height: 300px;
-    height: 450px;
+    min-height: 250px;
+    height: 350px;
     position: relative;
     @media all and (max-width: $med) {}
     @media all and (max-width: $sm) {}
@@ -422,6 +427,14 @@ h3 {
     }
 }
 
+.icon-set {
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+}
+
 .dev-icons {
     display: flex;
     align-items: center;
@@ -473,21 +486,27 @@ h3 {
 
 i {
     font-size: 4em;
+
+    &.icon {
+        font-size: 1.75em;
+    }
 }
+
+
 
 .icon {
     fill: #fff;
-    width: 64px;
-    height: 64px;    
-    margin-top: 1.5%;
+    width: 24px;
+    height: 24px;    
+    margin: 0.5%;
 
     &:hover {
         cursor: pointer;
     }
 
     @media all and (max-width: $sm) {
-        width: 32px;
-        height: 32px;
+        width: 16px;
+        height: 16px;
     }
 
 }

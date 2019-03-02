@@ -3,11 +3,11 @@ import '../css/scss/main.scss';
 import Typed from 'typed.js';
 
 var typed = new Typed('.typed', {
-    strings: ["digital enthusiast.", "digital native.", "Pug owner.", "Crows supporter."],
+    strings: ["JavaScript enthusiast.", "Pug owner.", "Crows supporter"],
     typeSpeed: 30,
     backSpeed: 30,
-    backDelay: 700,
-    showCursor: false,
+    backDelay: 800,
+    showCursor: true,
     smartBackspace: true
 });
 
