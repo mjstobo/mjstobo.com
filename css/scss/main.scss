@@ -156,7 +156,13 @@ nav a {
 .project-image {
     img {
         opacity: 0.6;
+        min-height: 300px;
+        height: auto;
+
+        @media all and (max-width: $sm) {
+           min-height: 200px;
     }
+}
 }
 
 .project-wrapper {
@@ -180,6 +186,7 @@ nav a {
     margin-bottom: 3.5%;
     min-height: 300px;
     width: 45%;
+    max-width: 650px;
     display: flex;
     flex-flow: column nowrap;
     & p {
@@ -189,10 +196,10 @@ nav a {
     }
 
     @media all and (max-width: $med) {
-        width: 80%;
+        width: 92.5%;
     }
     @media all and (max-width: $sm) {
-        width: 80%;
+        width: 92.5%;
     }
 }
 
@@ -350,8 +357,11 @@ h3 {
     background: $blue;
     width: 100%;
     min-height: 250px;
-    height: 350px;
+    height: auto;
     position: relative;
+
+    padding-bottom: 5%;
+
     @media all and (max-width: $med) {}
     @media all and (max-width: $sm) {}
 
