@@ -25,33 +25,31 @@ $('.autoscroll').click(() => {
     }, 400);
 });
 
-
+window.onload = () => {
 var projectIcon = document.getElementsByClassName('expand');
 var projectPanel = document.getElementsByClassName('proj-expand');
 var projectSection = document.getElementsByClassName('project-item');
-var iconFirst = document.getElementById('icon-first');
-var iconSecond = document.getElementById('icon-second');
+var iconSet = document.getElementsByClassName('icon-img');
 
 for(let icon in projectIcon){
-    projectIcon[icon].addEventListener('click', function () {
-        var x = projectPanel[icon].className;
-        switch (x) {
+    projectIcon[icon].addEventListener('click', () => {
+        switch (projectPanel[icon].className) {
             case 'proj-expand active':
                 projectPanel[icon].className = 'proj-expand inactive';
                 projectSection[icon].className = 'project-item inactive';
-                iconSecond.setAttribute('src', './plus.png');
+                iconSet[icon].setAttribute('src', './plus.png');
                 break;
             case 'proj-expand inactive':
                 projectPanel[icon].className = 'proj-expand active';
                 projectSection[icon].className = 'project-item active';
-                iconSecond.setAttribute('src', './minus.png');
+                iconSet[icon].setAttribute('src', './minus.png');
                 break;
             default:
                 break;
         }
-    }, false);
+    });
 }
-
+}
 
 
 
