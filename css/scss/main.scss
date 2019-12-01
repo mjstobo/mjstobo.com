@@ -256,6 +256,8 @@ nav a {
     bottom: 0;
     margin: 3%;
     position: absolute;
+    padding: 1%;
+    text-decoration: none;
     &:hover {
         color: $blue;
         background: $white;

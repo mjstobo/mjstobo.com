@@ -197,7 +197,9 @@ nav a {
   border: 2px solid #F7FFF7;
   bottom: 0;
   margin: 3%;
-  position: absolute; }
+  position: absolute;
+  padding: 1%;
+  text-decoration: none; }
   .cta:hover {
     color: #0300FF;
     background: #F7FFF7;
