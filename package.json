@@ -19,7 +19,7 @@
     "import": "0.0.6",
     "typed": "^0.3.3",
     "typed.js": "^2.0.10",
-    "webpack": "^4.29.0"
+    "webpack": "^5.94.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
